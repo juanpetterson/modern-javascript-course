@@ -12,6 +12,7 @@ class UI {
   }
 
   paint(weather) {
+    console.log(weather);
     const celsius = (+weather.main.temp - 273).toFixed(1);
     const feelsLikeCelsius = (+weather.main.feels_like - 273).toFixed(1);
     this.location.textContent = weather.name;
